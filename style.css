@@ -1,0 +1,221 @@
+/*
+Theme name: Meriteema
+Theme author: Lotta Fredman
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+#site-container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#site-header {
+    background: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 220px 30px 10px 90px;
+    text-align: right;
+    border: solid 2px #1a2271;
+    border-bottom: none;
+}
+
+#site-header h1 {
+    font-style: italic;
+    color: #5a7eb4;
+    -webkit-text-stroke: 1px #1a2271;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+#site-header p {
+    color: #1a2271;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#top-navi {
+    background-color: #99d9f6;
+    border: solid 2px #1a2271;
+    border-bottom: none;
+}
+
+#top-navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#top-navi ul li {
+    position: relative;
+}
+
+#top-navi > div > ul > li:first-child {
+    display: none;
+}
+
+#top-navi ul li a {
+    text-decoration: none;
+    color: #1a2271;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#top-navi .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    padding-top: 2px;
+}
+
+#top-navi ul li:hover .sub-menu {
+    display: block;
+}
+
+#top-navi .sub-menu li {
+    background-color: #99d9f6;
+    display: block;
+    width: 100%;
+}
+
+#top-navi ul li.current-menu-item > a, 
+#top-navi ul li.current-category-parent > a,
+#top-navi ul li.current-post-ancestor > a {
+    background-color: #5a7eb4;
+}
+
+#content {
+    border: solid 2px #1a2271;
+    display: flex;
+}
+
+#content main {
+    width: 70%;
+    padding: 15px;
+}
+
+#content main article {
+    border-bottom: 1px dashed #808080;
+    margin-bottom: 10px;
+}
+
+#content main article:last-child {
+    border: none;
+}
+
+#content main a,
+#content .news a {
+    text-decoration: none;
+    color: #5a7eb4;
+    font-weight: bold;
+}
+
+#content main h1 a, 
+#content main h2 a,
+#content .news h1 a,
+#content .news h2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#content main h1, 
+#content main h2,
+#content .news h1,
+#content .news h2 {
+    margin: 0;
+}
+
+#content main .date-category,
+#content #news-box .date {
+    color: #808080;
+    margin-top: 0;
+}
+
+#content #news-box {
+    display: flex;
+}
+
+#content #news-box .news {
+    width: 33.3%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 5px #808080;
+}
+
+#activity-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#activity-box section {
+    width: 33.33%;
+    padding-right: 10px;
+}
+
+#activity-box section:nth-child(3) {
+    padding-right: 0;
+}
+
+#sidebar {
+    width: 30%;
+    padding: 10px;
+}
+
+#content #sidebar a {
+    color: #5a7eb4;
+    text-decoration: none;
+}
+
+#content #sidebar h2, 
+#content #sidebar h1 {
+    background-color: #99d9f6;
+    color: #1a2271;
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+#content #sidebar > div:first-child > h1, 
+#content #sidebar > div:first-child > h2 {
+    margin-top: 5px;
+}
+
+#site-footer {
+    border: solid 2px #1a2271;
+    border-top: none;
+    background-color: #5a7eb4;
+    padding: 10px;
+    text-align: center;
+}
+
+#site-footer .footer-widget-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#site-footer .footer-widget {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#site-footer .footer-widget h1,
+#site-footer .footer-widget h2 {
+    color: #1a2271; 
+    font-size: 1.25em;
+}
+
+#site-footer .footer-widget a {
+    text-decoration: none;
+    color: #1a2271;
+}
